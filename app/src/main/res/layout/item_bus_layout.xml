@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="50dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:id="@+id/root_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_bus"/>
+
+        <TextView
+            android:id="@+id/tv_bus_name"
+            android:layout_toRightOf="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="Bus Name"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_bus_desc"
+            android:layout_below="@id/tv_bus_name"
+            android:layout_toRightOf="@id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non A/C Semi Sleeper (2+2)"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/tv_bus_desc"
+            android:layout_toRightOf="@id/image">
+
+            <TextView
+                android:id="@+id/tv_arrival_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingLeft="10dp"
+                android:text="19:15"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow"/>
+
+            <TextView
+                android:id="@+id/tv_reach_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="06:15"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_bus_ticket_price"
+            android:layout_below="@id/tv_bus_name"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGreen"
+            android:text="PKR 650"
+            android:paddingRight="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_total_seats"
+            android:layout_below="@id/tv_bus_ticket_price"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="36 Seats"
+            android:paddingRight="10dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

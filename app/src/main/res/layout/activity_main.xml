@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar_mainactivity"
+        layout="@layout/main_app_bar_layout"/>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_below="@id/toolbar_mainactivity"
+        android:layout_above="@id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/ic_home"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:id="@+id/tickets"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/ic_ticket"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/ic_profile"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:id="@+id/wallet"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/ic_wallet"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:id="@+id/settings"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/ic_settings"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

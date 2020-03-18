@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorGreen"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Karachi - Lahore"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:paddingTop="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_transporter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="KPN Travels"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_transporter_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Volvo A/C Multi Axle Semi Sleeper"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingBottom="20dp"/>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

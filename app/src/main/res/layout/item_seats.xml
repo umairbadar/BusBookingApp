@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/img_seat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ic_bus_seat_black"/>
+
+    <TextView
+        android:id="@+id/tv_seat_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seat no"
+        android:gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="From"/>
+
+        <EditText
+            android:id="@+id/et_boarding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/filled_circle"
+            android:background="@color/colorPrimaryDark"
+            android:drawablePadding="25dp"
+            android:padding="10dp"
+            android:hint="Enter Boarding"
+            android:inputType="textCapWords"
+            android:imeOptions="actionNext"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#DDDDDD"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="To"/>
+
+        <EditText
+            android:id="@+id/et_destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/unfilled_circle"
+            android:background="@color/colorPrimaryDark"
+            android:drawablePadding="25dp"
+            android:padding="10dp"
+            android:hint="Enter Destination"
+            android:inputType="textCapWords"
+            android:imeOptions="actionDone"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Date"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:text="Date"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:drawablePadding="25dp" />
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Day"
+                android:textColor="@color/colorBlack"
+                android:gravity="end"
+                android:textSize="18sp"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_searchBus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Bus"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:backgroundTint="@color/colorGreen"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seats.SeatsActivity">
+
+    <include
+        android:id="@+id/seats_toolbar"
+        layout="@layout/seats_activity_toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/seats_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seats_toolbar"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="@drawable/drop_shadow">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="Seat No: 7, 8"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@color/colorGreen"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="RS.1288"/>
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/colorGreen"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="PAY"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
