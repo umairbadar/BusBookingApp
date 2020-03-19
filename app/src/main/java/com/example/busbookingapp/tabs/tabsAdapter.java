@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-public class tabsAdapter extends FragmentPagerAdapter {
+public class tabsAdapter extends FragmentPagerAdapter  {
 
     private Context context;
     int totalTabs;
