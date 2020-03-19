@@ -7,13 +7,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.service.autofill.OnClickAction;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.busbookingapp.R;
-import com.example.busbookingapp.SelectLocationActivity;
+import com.example.busbookingapp.tabs.SelectLocationActivity;
 
 import java.util.ArrayList;
 import java.util.List;
